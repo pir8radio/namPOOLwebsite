@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -83,6 +84,21 @@
 										<h2><img src="images/waves.png" alt="waves clipart" />&nbsp; The Pool &nbsp;<img src="images/waves.png" alt="waves clipart" /></h2>
 										<p>Some info about the nam SIGNA pool, why choose us, and how we strive to be the best!</p>
 									</header>
+<header class="style2">
+    <h2>nam Pool Capacity</h2>
+    <p>
+    <div class="infopanel"></div>
+    </p>
+</header>
+    <script>
+    $.getJSON('https://signapool.notallmine.net/api/getMiners', function(data) {
+
+        var text = `<ul style="list-style-type:none;"><li>Physical: ${(data.poolCapacity/1024).toFixed(3) + ' PiB</li>'}
+                    <li>Effective: ${(data.poolTotalEffectiveCapacity/1024).toFixed(3) + ' PiB</li>'}
+                    <li>Pool Effective: ${(data.poolSharedCapacity/1024).toFixed(3) + ' PiB</li>'}`
+        $(".infopanel").html(text);
+    });
+    </script>
 									<p>First off, we are one of very few pools that <a href="https://miningpoolstats.stream/signa" target="_blank">
 									PAY YOU</a> for using our pool. On top of 0 pool fees we pay our miners an additional 5% on top of 
 									the block winnings!  Why? We beleive in this blockchain	and we put our own money in to help Signum 
@@ -103,6 +119,8 @@
 									in "the cloud". You can <a href="https://status.notallmine.net" target="_blank">view our uptime here</a>.</li>
 									  <li>Our primary servers sit on multiple major 10Gbps internet backbones, squeezing every possible millisecond 
 									      out of your mining submissions.
+									  <li>Our Pool, Node, and Wallet Servers are WAY overbuilt for the task, sporting 4-GPU's and 40-cores for processing 
+									      your transactions quickly.</li>  
 									  <li>We use a global CDN with edge servers in almost every country globally (map below) so we have a server near
 									      you for fast reliable connections.</li>
 									  <li>Our connections are all encrypted (https) and secure, whether you are mining on the pool or using our online web 

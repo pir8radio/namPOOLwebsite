@@ -79,7 +79,6 @@
 
 									<br class="mobile-hide" />
 									<br class="mobile-hide" />
-
 									<header class="style1">
 										<h2>The Pool</h2>
 										<p>Some info about the nam SIGNA pool, why choose us, and how we strive to be the best!</p>
@@ -123,12 +122,26 @@
 
 			<!-- Highlights -->
 				<section id="highlights" class="wrapper style3">
-					<div class="title">title</div>
+					<div class="title">Real-Time Info</div>
 					<div class="container">
-
+						<!-- TradingView Widget BEGIN -->
+						<div class="tradingview-widget-container">
+						  <div class="tradingview-widget-container__widget"></div>
+						  <div class="tradingview-widget-copyright"></div>
+						  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+						  {
+						  "symbol": "BITTREX:SIGNAUSD",
+						  "width": "100%",
+						  "locale": "en",
+						  "colorTheme": "light",
+						  "isTransparent": true
+						  }
+						  </script>
+						</div>
+						<!-- TradingView Widget END -->
 					</div>
 				</section>
-
+			
 			<!-- Footer -->
 				<section id="footer" class="wrapper">
 					<div class="title">feedback</div>
@@ -145,7 +158,7 @@
 						</div>
 						<div id="copyright">
 							<ul>
-								<li>&copy; nam</li><li>See an issue with this site? Edit it on Github.</a></li>
+								<li>&copy; nam</li><li>See an issue with this site? <a href="https://github.com/pir8radio/namPOOLwebsite" target="_blank">Edit on Github</a>.</a></li>
 							</ul>
 						</div>
 					</div>

@@ -72,6 +72,15 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Basic Desktop-Mobile */
+#content-desktop {display: inline-block !important;}
+#content-mobile {display: none !important;}
+
+	@media screen and (max-width: 768px) {
+	#content-desktop {display: none !important;}
+	#content-mobile {display: block !important;}
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -1664,9 +1673,9 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 		cursor: pointer;
-		padding: 0 2.25em 0 2.25em;
+		padding: 0 1.25em 0 1.25em;
 		font-size: 0.9em;
-		min-width: 12em;
+		min-width: 10em;
 		height: 4em;
 		line-height: 4em;
 	}
@@ -1762,6 +1771,32 @@ input, select, textarea {
 			button.style3:active,
 			.button.style3:active {
 				background-color: #1f232b;
+			}
+		input[type="button"].fera-allReviews-showMore-btn,
+		input[type="submit"].fera-allReviews-showMore-btn,
+		input[type="reset"].fera-allReviews-showMore-btn,
+		button.fera-allReviews-showMore-btn,
+		.button.fera-allReviews-showMore-btn {
+			background: #e97770 url("images/overlay.png");
+			color: #fff;
+			height: 8em;
+			margin: 40px 0 0 0;
+		}
+
+			input[type="button"].fera-allReviews-showMore-btn:hover,
+			input[type="submit"].fera-allReviews-showMore-btn:hover,
+			input[type="reset"].fera-allReviews-showMore-btn:hover,
+			button.fera-allReviews-showMore-btn:hover,
+			.button.fera-allReviews-showMore-btn:hover {
+				background-color: #f98780;
+			}
+
+			input[type="button"].fera-allReviews-showMore-btn:active,
+			input[type="submit"].fera-allReviews-showMore-btn:active,
+			input[type="reset"].fera-allReviews-showMore-btn:active,
+			button.fera-allReviews-showMore-btn:active,
+			.button.fera-allReviews-showMore-btn:active {
+				background-color: #d96760;
 			}
 
 /* List */
@@ -2150,6 +2185,7 @@ input, select, textarea {
 				display: inline-block;
 				text-align: center;
 				padding: 0 1.5em 0 1.5em;
+				margin: -10px 0 -10px 0;
 			}
 
 				#nav > ul > li > ul {
@@ -2162,7 +2198,7 @@ input, select, textarea {
 					color: rgba(255, 255, 255, 0.75);
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
+					font-size: 0.9em;
 					letter-spacing: 0.25em;
 					height: 5em;
 					line-height: 5em;
@@ -2196,7 +2232,7 @@ input, select, textarea {
 	}
 
 		.dropotron.level-0 {
-			margin-top: -1px;
+			margin-top: -21px;
 			margin-left: 0;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;

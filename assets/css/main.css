@@ -2035,6 +2035,8 @@ input, select, textarea {
 			margin-bottom: -3.25em;
 			margin-left: -12.5em;
 			padding-top: 0.5em;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
 		}
 
 			.wrapper .title:before {

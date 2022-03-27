@@ -1680,8 +1680,7 @@ input, select, textarea {
 		padding: 0 1.25em 0 1.25em;
 		font-size: 0.9em;
 		min-width: 10em;
-		height: 4em;
-		line-height: 4em;
+		height: 3.6em;
 	}
 
 		input[type="button"]:hover,

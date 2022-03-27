@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.transparent9 {
+	opacity: 0.9;
+}
+
 /* Basic Desktop-Mobile */
 #content-desktop {display: inline-block !important;}
 #content-mobile {display: none !important;}

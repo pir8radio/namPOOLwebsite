@@ -120,23 +120,7 @@
 										<p>Some info about the nam SIGNA pool, why choose us, and how we strive to be the best!</p>
 								</header>
     <div class="infopanel"></div>
-
-
-
-
-<script>
-    $.getJSON('https://signapool.notallmine.net/api/getMiners', function(data) {
-	var miners = (data.miners).length
-	var pphys = (data.poolCapacity/1024).toFixed(3)
-	var peff = (data.poolTotalEffectiveCapacity/1024).toFixed(3)
-	var seff = (data.poolSharedCapacity/1024).toFixed(3)
-
-	$("#miners").attr("data-target", miners);
-	$("#pphys").attr("data-target", pphys);
-	$("#peff").attr("data-target", peff);
-	$("#seff").attr("data-target", seff);
-    });
-</script>   	
+   	
 
 									<p>First off, we are one of very few pools that <a href="https://miningpoolstats.stream/signa" target="_blank">
 									PAY YOU</a> for using our pool. On top of 0 pool fees we pay our miners an additional 5% on top of 
@@ -240,6 +224,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/reviews.js"></script>
 			<script src="assets/js/backtotop.js"></script>
+			<script src="assets/js/signapoolgrab.js"></script>
 			<script src="assets/js/functions.js" defer></script>
 			<script src="https://1nbgpqf7p1sq.statuspage.io/embed/script.js"></script>
 

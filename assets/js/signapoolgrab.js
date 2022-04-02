@@ -1,0 +1,11 @@
+    $.getJSON('https://signapool.notallmine.net/api/getMiners', function(data) {
+	var miners = (data.miners).length
+	var pphys = (data.poolCapacity/1024).toFixed(3)
+	var peff = (data.poolTotalEffectiveCapacity/1024).toFixed(3)
+	var seff = (data.poolSharedCapacity/1024).toFixed(3)
+
+	$("#miners").attr("data-target", miners);
+	$("#pphys").attr("data-target", pphys);
+	$("#peff").attr("data-target", peff);
+	$("#seff").attr("data-target", seff);
+    });

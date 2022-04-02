@@ -1,3 +1,7 @@
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+
 // DOM Element's
 const counters = document.querySelectorAll('.counter');
 
@@ -47,3 +51,4 @@ for(let n of counters) {
 
     updateCount();
 }
+}, delayInMilliseconds);

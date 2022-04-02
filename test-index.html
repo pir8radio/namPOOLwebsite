@@ -96,15 +96,14 @@
 										<p>Some info about the nam SIGNA pool, why choose us, and how we strive to be the best!</p>
 									</header>
 <header class="style2">
-    <h2>nam Pool Capacity</h2>
-    <p>
     <div class="infopanel"></div>
-    </p>
 </header>
     <script crossorigin="anonymous">
     $.getJSON('https://signapool.notallmine.net/api/getMiners', function(data) {
 
-        var text = `<ul style="list-style-type:none;"><li>Physical: ${(data.poolCapacity/1024).toFixed(3) + ' PiB</li>'}
+        var text = `<ul style="list-style-type:none;">
+		    <li>Miners: ${(data.miners).length + '</li>'}
+		    <li>Physical: ${(data.poolCapacity/1024).toFixed(3) + ' PiB</li>'}
                     <li>Effective: ${(data.poolTotalEffectiveCapacity/1024).toFixed(3) + ' PiB</li>'}
                     <li>Pool Effective: ${(data.poolSharedCapacity/1024).toFixed(3) + ' PiB</li>'}`
         $(".infopanel").html(text);

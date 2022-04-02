@@ -103,9 +103,9 @@
 
         var text = `<ul style="list-style-type:none;">
 		    <li>Miners: ${(data.miners).length + '</li>'}
-		    <li>Physical: ${(data.poolCapacity/1024).toFixed(3) + ' PiB</li>'}
-                    <li>Effective: ${(data.poolTotalEffectiveCapacity/1024).toFixed(3) + ' PiB</li>'}
-                    <li>Pool Effective: ${(data.poolSharedCapacity/1024).toFixed(3) + ' PiB</li>'}`
+		    <li>Pool Physical: ${(data.poolCapacity/1024).toFixed(3) + ' PiB</li>'}
+                    <li>Pool Effective: ${(data.poolTotalEffectiveCapacity/1024).toFixed(3) + ' PiB</li>'}
+                    <li>Shared Effective: ${(data.poolSharedCapacity/1024).toFixed(3) + ' PiB</li>'}`
         $(".infopanel").html(text);
     });
     </script>

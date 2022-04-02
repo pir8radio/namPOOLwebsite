@@ -1491,7 +1491,7 @@ input, select, textarea {
 
 	section,
 	article {
-		margin: 0 0 4em 0;
+		margin: 0 0 0 0;
 	}
 
 	section > :last-child,

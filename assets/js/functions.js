@@ -33,22 +33,26 @@ counters.forEach(counter => {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
-for(let n of counters) {
+for (let n of counters) {
     const updateCount = () => {
-        const target = + n.getAttribute('data-target');
-        const count = + n.innerText;
-        const speed = 5000;
-        
-        const inc = target / speed; 
+        const target = +n.getAttribute('data-target');
+        const count = +n.innerText;
 
-        if(count < target) {
-            n.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 1);
+        // add these two lines
+        const divider = 5000;
+        const speed = 50; // 1000 millisecond => 1 second;
+
+        const inc = target / divider;
+
+        if (count < target) {
+             n.innerText = Math.ceil(count + inc);
+
+             // and then, pass speed variable as a parameter here
+             setTimeout(updateCount, speed);
         } else {
-            n.innerText = target;
+             n.innerText = target;
         }
-    }
-
+    };
     updateCount();
 }
 }, delayInMilliseconds);

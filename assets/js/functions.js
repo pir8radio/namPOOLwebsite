@@ -13,9 +13,7 @@ counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
         const speed = 5000;
-
         const inc = target / speed;
-
         if(count < target) {
             counter.innerText = Math.ceil(count + inc);
             setTimeout(updateCount, 1);
@@ -23,10 +21,8 @@ counters.forEach(counter => {
             counter.innerText = target;
         }
     }
-
     updateCount();
 })
-
 */
 
 /*** Same functionality, now using for...of ***/
@@ -39,13 +35,13 @@ for (let n of counters) {
         const count = +n.innerText;
 
         // add these two lines
-        const divider = 5000;
-        const speed = 50; // 1000 millisecond => 1 second;
+        const divider = 900;
+        const speed = 0; // 1000 millisecond => 1 second;
 
         const inc = target / divider;
 
         if (count < target) {
-             n.innerText = Math.ceil(count + inc);
+             n.innerText = (count + inc).toFixed(3);
 
              // and then, pass speed variable as a parameter here
              setTimeout(updateCount, speed);

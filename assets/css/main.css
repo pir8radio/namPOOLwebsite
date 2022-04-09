@@ -182,7 +182,8 @@ input, select, textarea {
 		video {
 		  width: 100%    !important;
 		  height: auto   !important;
-		  border: 9px outset #ddd;
+		  border: 9px ridge #ddd;
+		  box-shadow: 5px 5px 5px;
 		}
 
 	strong, b {

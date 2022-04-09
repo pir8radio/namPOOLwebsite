@@ -179,6 +179,12 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+		video {
+		  width: 100%    !important;
+		  height: auto   !important;
+		  border: 9px outset #ddd;
+		}
+
 	strong, b {
 		font-weight: 700;
 		color: #484d55;

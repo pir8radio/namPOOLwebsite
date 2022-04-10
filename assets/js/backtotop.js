@@ -58,7 +58,7 @@ function createButton(obj, pageSimulator) {
             }
         };
         backToTopButton.onclick = function() {
-	    window.scrollTo({top: 0, behavior: "smooth"});
+	    $('html, body').animate({scrollTop:0}, 1000);
         };
     }
 };

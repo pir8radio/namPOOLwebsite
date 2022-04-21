@@ -78,9 +78,12 @@
 										<p>Create account, Plot drives, Image Pi, Plug-in & Mine</p>
 									</header>
 										<img class="image featured" src="images/pie-miner.png" alt="Pie miner guy with car of signa coins" />
-									<p>Do you want to get mining SIGNA with minimal effort? That is the purpose of this page, We will show you how to
-									setup a Signum account, download and install the nam-PiMiner image to a Raspberry Pi, Plot drives, plug everything in
-									and have you mining in no time!   We will also supply some links to buy various hardware if you are starting with none.</p>
+									<p>Do you want to get mining SIGNA with minimal effort? That is why the nam-PiMiner image was made! You might be wondering why use this Raspberry Pi image vs just installing a Signum-Miner on a Pi yourself?
+									   Good question, this image is all ready to go, just image it to an SD card, do an initial boot, and then the nam-PiMiner is ready to go, plug in drives with plots in their root directory and nam-PiMiner
+									   will pick them up automatically, modify the config and restart the miner!  No user input needed, add a new drive at any time and the nam-PiMiner will add the new drives to the config real-time. It can be
+									   headless or hook up an HDMI monitor to view the miner status screen. Great for users that may not be tech savy or maybe just getting started on the Signum Network. On this page we will show you how to
+									   setup a Signum account, download and install the nam-PiMiner image to a Raspberry Pi, Plot drives, plug everything in and have you mining in no time!
+									   We will also supply some links to buy various hardware if you are starting with none.</p>
 
 									<br class="mobile-hide" />
 									<br class="mobile-hide" />
@@ -104,7 +107,7 @@
 										<p><b>Let's Get Going!</b></p>
 									</header>   	
 									<p>Let me start by saying this is a beginners guide to get mining FAST, there are many ways to go about this but this how-to is written to be quick and dirty. More advanced users can make other mining changes not covered here.  
-									   Ok.. First, you need to create a Signum Account that you will activate and setup for mining. 
+									   Ok.. First, you need to create a Signum Account that you will activate and setup for mining. Feel free to skip ahead steps if you already have a Signum account.
 									<ol>
 									  <li>Head over to
 									<a class="normlink" href="https://signawallet.notallmine.net" target="_blank">https://signaWallet.notallmine.net</a> and click on "Phoenix", you should see a disclaimer, then a welcome screen, click "Next".</li>
@@ -161,7 +164,7 @@
 										<p><b>WiFi & Extra Info</b></p>
 									</header>
 									<ul>
-									  <li>If you do not want to use a hard wired ethernet connection and would perfer to use WiFi, Download the <a class="normlink" href="https://download851.mediafire.com/84uau41tdagg/ek0enm7itttk8of/wpa_supplicant.conf">WiFi Setup Config</a> file, open it up and change the settings
+									  <li>If you do not want to use a hard wired ethernet connection and would prefer to use WiFi, Download the <a class="normlink" href="https://download851.mediafire.com/84uau41tdagg/ek0enm7itttk8of/wpa_supplicant.conf">WiFi Setup Config</a> file, open it up and change the settings
 									      to work for your country and WiFi connection and save the file. Power down the nam-PiMiner, pull the SD card and plug it back into your computer, copy the WiFi file you just modified to the root of the Boot drive that should have showed up when you plugged in the SD card. Again
 									      DO NOT click fomat drive if that pops up on windows, just cancel out. If all went well when you put the SD back in the nam-PiMiner and boot it up, it will now be using your WiFi connection, Enjoy!</li>
 									  <li>More advanced users can also modify the pool URL to use other pools, and edit various miner settings if needed. We chose not to lock down the image to nam only.</li>

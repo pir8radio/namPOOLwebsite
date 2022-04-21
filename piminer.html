@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>nam SIGNA mining pool</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Top tier Signum Mining Pool for the signum blockchain. We pay all miners an additional 5% bonus on every payout, plus 0% fees! Come in and find out more about the nam SIGNA pool!"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta property="og:title" content="nam SIGNA pool - nam-PiMiner">
+		<meta property="og:site_name" content="nam-PiMiner Setup">
+		<meta property="og:url" content="signainfo.notallmine.net/piminer.html">
+		<meta property="og:description" content="Quick start guide to get the nam-PiMiner going and mining on the Signum Network quickly. Start mining in the nam SIGNA pool using a Raspberry Pi in no time at all!">
+		<meta property="og:type" content="product">
+		<meta property="og:image" content="https://signainfo.notallmine.net/pi-miner_og.png">
+		<link rel="stylesheet" href="assets/css/main.css?v=6" />
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<img src="images/nam_white.png">
+							<h1><a href="index.html">not all mine</a></h1>
+							<p>Signum mining pool</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">nam Services</a>
+									<ul>
+										<li><a href="https://signapool.notallmine.net" target="_blank">Mining Pool</a></li>
+										<li><a href="https://explorer.notallmine.net" target="_blank">Blockchain Explorer</a></li>
+										<li><a href="https://signawallet.notallmine.net" target="_blank">Web Wallet</a></li>
+										<li><a href="https://status.notallmine.net" target="_blank">Server Status</a></li>
+										<li><a href="https://discord.com/invite/DQDz7QmP9P" target="_blank">Discord</a></li>
+									</ul>
+							<!--	</li>
+								<li>
+									<a href="#">Signum Links</a>
+									<ul>
+										<li><a href="https://signum.network" target="_blank">Signum Official Website</a></li>
+										<li><a href="https://coinmarketcap.com/currencies/signum/" target="_blank">Signum - CoinMarketCap</a></li>
+										<li><a href="https://www.coingecko.com/en/coins/signum" target="_blank">Signum - CoinGecko</a></li>
+										<li><a href="https://bittrex.com/Market/Index?MarketName=BTC-SIGNA" target="_blank">Signum - Bittrex</a></li>
+										<li><a href="https://discord.com/invite/QHZkF4KHDS" target="_blank">Official Discord Server</a></li>
+									</ul>
+								</li>-->
+							</ul>
+						    <a href="https://signapool.notallmine.net/">
+						    <button class="style1">Start Mining</button>
+						    </a>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">Easy as PiMiner</div>
+					<div class="container">
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Get Your Raspberry Pi Mining SIGNA Quickly<br class="mobile-hide" />
+										</h2>
+										<p>Create account, Plot drives, Image Pi, Plug-in & Mine</p>
+									</header>
+										<img class="image featured" src="images/pie-miner.png" alt="Pie miner guy with car of signa coins" />
+									<p>Do you want to get mining SIGNA with minimal effort? That is the purpose of this page, We will show you how to
+									setup a Signum account, download and install the nam-PiMiner image to a Raspberry Pi, Plot drives, plug everything in
+									and have you mining in no time!   We will also supply some links to buy various hardware if you are starting with none.</p>
+
+									<br class="mobile-hide" />
+									<br class="mobile-hide" />
+									<header class="style1">
+										<p><b>Things you will need</b></p>
+									</header>
+									<ul>
+									  <li>Hardware - Raspberry Pi device (3 is fine 4 preferred)</li>
+									  <li>Hardware - SD card (a 64Gb high speed card is preferred C10/U1/A1 markings)</li>
+									  <li>Hardware - USB Drives (sticks will work, but USB 3.0 or better drives that support UASP preferred)</li>  
+									  <li>Software - <a class="normlink" href="https://blackpawn.com/tp/" target="_blank">TurboPlotter</a> (used to create the mining plots on your USB drives)</li>
+									  <li>Software - <a class="normlink" href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a></li>
+									  <li>Software - <a class="normlink" href="https://download2271.mediafire.com/9khxwuk6zisg/77h2e2o8mbni9bx/nam-PiMiner-1.0.1.img.xz">nam-PiMiner Raspberry Pi OS Image</a></li>
+									  <li>Optional Software - <a class="normlink" href="https://download851.mediafire.com/84uau41tdagg/ek0enm7itttk8of/wpa_supplicant.conf">WiFi Setup Config</a></li>
+									</ul>
+									<img class="image featured" src="images/pi4b.png" alt="Raspberry Pi 4" style="margin: 0px 0px 0px 0px;" />
+									<div class="infopanel"></div>
+									<br class="mobile-hide" />
+									<br class="mobile-hide" />
+									<header class="style1">
+										<p><b>Let's Get Going!</b></p>
+									</header>   	
+									<p>Let me start by saying this is a beginners guide to get mining FAST, there are many ways to go about this but this how-to is written to be quick and dirty. More advanced users can make other mining changes not covered here.  
+									   Ok.. First, you need to create a Signum Account that you will activate and setup for mining. 
+									<ol>
+									  <li>Head over to
+									<a class="normlink" href="https://signawallet.notallmine.net" target="_blank">https://signaWallet.notallmine.net</a> and click on "Phoenix", you should see a disclaimer, then a welcome screen, click "Next".</li>
+									  <li>Now click the "Create a new account" button. This next screen will generate a secure passphrase for you, just wiggle your mouse around in the empty box until the bar graph reaches 100%, then for added security you will need to enter an "individual salt"
+									      this can be any words in your native language, or anything really, it's just words numbers or special characters added to the already secure 12-word passphrase the system generated with the random mouse movements, click "Next".</li>
+									  <li>You should now see your generated passphrase, Address, and Account ID. Write down or copy/paste the account ID into a text file you will need this account ID later when plotting your drives, it's a string of numbers only no dashes or spaces. 
+									      <b>It is VERY important you actually write down your passphrase, or save it in a secure place.</b>  This is the ONLY way to get your funds that have been
+									      mined, traded, or sent to your account, It's pretty important you save this.  If you plan to keep some money in your account I suggest you have a few copies of this passphrase and protect them, these passphrases ARE your money. No admin or Signum member will be
+								   	      able to provide this passphrase to you, if you lose it or enter it somewhere you shouldn't you can lose all of your funds and no one can help you recover them. This can not be stressed enough. Click "Next" after saving the passphrase.</li>
+									  <li>Here you will define a PIN number.  This pin is used only on this computer and browser where you created this account.  It's purpose is so you do not have to enter the LONG 12+ word passphrase every time you want to access your account, and the other purpose
+									      is to keep people who have access to this computer and browser from easilly getting into your saved account. This can be a few numbers, or some other password you like. If you forget this PIN, it is not the end of the world, you can delete this account from 
+									      this computer, re-import your account using the 12+ word passphrase and set a new PIN. Again it's main purpose is to keep your account from family or friends who have access to this computer while allowing you to use the account without entering 12+ words every
+									      time you make a transaction. Click "Next"</li>
+									  <li>Now you should confirm your saved passphrase on this screen.  When done click "Activate".</li>
+									  <li>Great Job!   You should now have a Signum Account with a balance of 0 and an activation transaction pending. You must wait for your activation transaction to be verified, this usually only takes 5 minutes or so. Just refresh the page after about 5 minutes and you
+									      should then see your 0 balance show a small amount of SIGNA once you are activated.   This small amount is given to you for free from the blockchain, it allows you to make ONE transaction. Think of it as your one phone call if you go to jail 😊 We will use this one
+									      transaction to assign your mining account to the nam Pool so you can start mining and earn more SIGNA!</li>
+									  <li>Once your balance at the top of the wallet dashboard shows a small balance, click "Mining" then "Join Pool" on the left hand side of the screen, if you are on a phone it's in the menu from the top left. You should now see a screen asking for "Recipient" and your PIN.
+									      Enter this Pool Address into the Recipient line: <b>S-S456-G8QD-HZQ7-B66VL</b> then enter your PIN on the PIN line and click the send button.  You just made your first Signum Transaction AND assigned your account to use the nam SIGNA pool for mining! This process will
+									      take about 20 minutes to complete on the blockchain and pool. No worries we will be doing other stuff while this behind the scenes task completes. </li>
+									  <li>Lets get the Raspberry Pi loaded up and ready to go!   Using the download link above grab the <a class="normlink" href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi Imager</a> for your computer that you will be using to configure the Pi with.
+									      I'm using my regular Windows laptop.</li>
+									  <li>Download the <a class="normlink" href="https://download2271.mediafire.com/9khxwuk6zisg/77h2e2o8mbni9bx/nam-PiMiner-1.0.1.img.xz">nam-PiMiner Raspberry Pi OS Image</a>, you will need to select this image when using the Raspberry Pi Imager from the previous step.</li>
+									  <li>Take your SD card you plan to install the nam-PiMiner on and plug it into your computer. Most newer laptops have SD card readers buit-in otherwise you will need a USB SD card reader for this process.</li>
+									  <li>Open the Raspberry Pi Imager and click "Choose OS" and select "Use Custom", now find and select the nam-PiMiner Raspberry Pi OS Image you downloaded earlier (it should end in img.xz). Once the nam-PiMiner has been selected click "Choose Storage" and select your SD
+									      Card you plugged in on the previous step. Then click "Write" and agree that it will overwrite the SD Card.   During this process windows may pop up some alerts saying "format this drive" or something like that, just close out of those popups, windows doesn't like linux
+									      or Pi drives and that is windows not understanding what is written on the SD card <b>DO NOT CLICK "FORMAT DRIVE" on any of these popup windows.</b></li>
+									  <li>Once the imager is done with the SD card you can put it in your Raspberry Pi and power up the Pi.  nam-PiMiner will boot up and then reboot. If you have a monitor hooked to your Pi you should finally see the nam-PiMiner screen! This means the Miner OS is installed and
+									      ready for the next steps, great job so far! <b>If you already have plotted drives with plots on the root of the drive, you can plug in the USB drives, ethernet <i>(see step X under Mining below for WiFi)</i>, power and mining will start!</b>
+									      <img class="image featured" src="images/nam-piminer.jpg" style="margin: 0px 0px 0px 30px; padding: 0px 50px 0px 0px; max-width: 600px;"></li>
+									</ol>
+									</p> 
+									<br/><br/>
+									<header class="style1">
+										<p><b>Prepare to PLOT!</b></p>
+										<img src="images/plot.png" style="margin: -70px 0px 0px -20px;">
+									</header>
+									<ol>
+									  <li>Now we need to plot your USB drives and plug it all in and get to Mining.  The USB drives you will be mining with need to be formatted in NTFS format, and all plot files should be in the root of the mining drives not within any kind of folders. This will allow the 
+									      nam-PiMiner to pick them up and start mining.  The nam-PiMiner will also identify on-the-fly when a new drive is plugged in, the plots are added automatically to the miner and the mining process restarted all without needing any kind of input. nam-PiMiner was 
+									      built to be easy to use and expand on-the-fly. The plot files you are about to make need to be generated using your account ID, remember that account ID you wrote down back on "Let's get going" step 1?</li>
+									  <li>Download <a class="normlink" href="https://blackpawn.com/tp/" target="_blank">TurboPlotter</a> from the link above, open the zip and either drag the TurboPlotter.exe to your desktop or run it from inside the zip. You will be greeted by a screen asking if you have
+									      existing plots, we assume no, since this is a quick start how-to.  Click "No".</li>
+									  <li>The next screen should ask you what your account ID is, this is the number you either pasted into a text file or wrote down earlier, enter your account ID here. Click "OK".</li>
+									  <li>You should now be looking at the main plotting screen, it should say Config, with Processor, SSD path, and Target disk path in the window.  Processor will show CPU or GPU (video cards if you have any).  If you have a good video card you can select it here to make
+									      plotting go much quicker otherwise select CPU. SSD path helps with speed too, if you have an SSD or even if the OS drive of the computer you are plotting on is an SSD select it here, this is just a temporary storage area to aid in plotting. "Target disk path" is the
+									      newly formated NTFS USB drive you should have plugged into your plotting computer, select it. Below the Target disk Path you should see "Start nonce: Automatic", "Max file size: 100.0GB" (if it's something else, change it to 100GB, this makes more manageable plot files).
+									      Click "Start Plotting".</li>  
+									  <li>This process should fill your drive with files that look like 12345678990808608733_1234569822229757952_38144.plot   the file name is &#60;YOUR ACCOUNT ID&#62;_&#60;NONCE STARTING VALUE&#62;_&#60;QTY OF NONCES IN THIS FILE&#62;.  Any file name ending in .plotting is in progress
+									      and not valid.  Once the plotting is complete you can plug the plotted USB drive into the nam-PiMiner, plug in an ethernet connection, power it up, and start mining!</li>
+									</ol>
+									<br/><br/>
+									<header class="style1">
+										<p><b>WiFi & Extra Info</b></p>
+									</header>
+									<ul>
+									  <li>If you do not want to use a hard wired ethernet connection and would perfer to use WiFi, Download the <a class="normlink" href="https://download851.mediafire.com/84uau41tdagg/ek0enm7itttk8of/wpa_supplicant.conf">WiFi Setup Config</a> file, open it up and change the settings
+									      to work for your country and WiFi connection and save the file. Power down the nam-PiMiner, pull the SD card and plug it back into your computer, copy the WiFi file you just modified to the root of the Boot drive that should have showed up when you plugged in the SD card. Again
+									      DO NOT click fomat drive if that pops up on windows, just cancel out. If all went well when you put the SD back in the nam-PiMiner and boot it up, it will now be using your WiFi connection, Enjoy!</li>
+									  <li>More advanced users can also modify the pool URL to use other pools, and edit various miner settings if needed. We chose not to lock down the image to nam only.</li>
+									  <li>Big shout-out to the Signum community for helping with this particulary <b>monk</b> who really did all of the work building this image, send them a donation <b>S-4KSH-S7HQ-TH83-EHTZF</b>.</li>
+
+									</ul>
+
+									<br class="mobile-hide" />									
+									<!--</center><br/><br/>
+									<video controls poster="images/poster.jpg" preload="metadata">
+									    <source src="images/Bonus.mp4" type="video/mp4">
+    									Sorry, your browser doesn't support embedded videos.
+									</video>-->
+								</article>
+							</div>
+					</div>
+				</div>
+			<img src="images/sapling.png" alt="Newly planted tree sapling" style="margin: 0px -55px -11px -15px; max-width: 60px; z-index: 1;" />
+			<img src="images/Siggy_150px.png" alt="Siggy Signum Character" style="margin: 0px 0px -9px 30px; z-index: 3;" />
+			<img src="images/coins.png" alt="Stack of Minned Gold Coins" style="margin: 0px 0px -11px -30px; max-width: 70px;" />
+			<img src="images/sapling.png" alt="Newly planted tree sapling" style="margin: 0px 0px -11px -0px; max-width: 60px;" />
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title transparent9">Market Info</div>
+					<div class="container">
+						<!-- TradingView Widget BEGIN -->
+						<div class="tradingview-widget-container">
+						  <div class="tradingview-widget-container__widget"></div>
+						  <div class="tradingview-widget-copyright"></div>
+						  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+						  {
+						  "symbol": "BITTREX:SIGNAUSD",
+						  "width": "100%",
+						  "locale": "en",
+						  "colorTheme": "light",
+						  "isTransparent": true
+						  }
+						  </script>
+						</div>
+						<!-- TradingView Widget END -->
+					</div>
+				</section>			
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<!--<div class="title">nam Shop</div>
+					<div class="container">
+						<header class="style3">
+							<h2>Header</h2>
+							<p>
+								Stuff here
+							</p>
+						</header> -->
+
+						<div id="copyright">
+							<ul>
+								<li>&copy; nam</li><li>See an issue with this site? <a href="https://github.com/pir8radio/namPOOLwebsite" target="_blank" style="text-decoration: none;">Edit on Github</a>.</a></li><li><a href="https://discord.com/invite/DQDz7QmP9P" target="_blank" style="text-decoration: none;">Contact Us</a></li>
+								   <li>
+							        	<a class="normlink" href="https://discord.com/invite/DQDz7QmP9P" target="_blank"><i class="fab fa-discord fa-lg" data-toggle="modal" data-target="#QRModal" title="" data-original-title="Discord"></i></a>
+ 								        <a class="normlink" href="https://www.facebook.com/namSIGNApool" target="_blank"><i class="fab fa-facebook fa-lg" data-toggle="modal" data-target="#QRModal" title="" data-original-title="Telegram"></i></a>
+              								<a class="normlink" href="https://twitter.com/NamSignaPool" target="_blank"><i class="fab fa-twitter fa-lg" data-toggle="modal" data-target="#QRModal" title="" data-original-title="Twitter"></i></a>
+              								<a class="normlink" href="https://www.reddit.com/r/Not_All_Mine/" target="_blank"><i class="fab fa-reddit fa-lg" data-toggle="modal" data-target="#QRModal" title="" data-original-title="Reddit"></i></a>
+              								<a class="normlink" href="https://github.com/pir8radio/namPOOLwebsite" target="_blank"><i class="fab fa-github fa-lg" data-toggle="modal" data-target="#QRModal" title="" data-original-title="Reddit"></i></a>
+            							   </li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/backtotop.js"></script>
+
+	</body>
+</html>

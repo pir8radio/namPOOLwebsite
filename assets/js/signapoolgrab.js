@@ -5,7 +5,7 @@
 	var seff = (data.poolSharedCapacity/1024).toFixed(3)
 	//var bonusstr = (data.miners).find(x => x.address === '7338594461977886954').pendingBalance
 	//var bonusnum = parseFloat(bonusstr)
-	var bonusnum = "68321 SIGNA"
+	var bonusnum = "68321.097"
 	var bonus = bonusnum.toLocaleString("en-US");
 
 	$("#miners").attr("data-target", miners);
